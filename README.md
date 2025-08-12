@@ -17,7 +17,7 @@ Tell the app how you feel via voice input, and it suggests the perfect movies to
 
 ## Demo
 
-[Download and watch the demo video]("C:\Users\LENOVO\Videos\Captures\final_moodastra_movie_recommender.mp4")
+[Download and watch the demo video]("[C:\Users\LENOVO\Videos\Captures\final_moodastra_movie_recommender.mp4](https://www.linkedin.com/posts/data-bhoomigupta_ai-artificialintelligence-machinelearning-activity-7361141500946075648-rfzy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6bt0gBWB0vThv0YkZegLhvUCQAVJu7Zn8)")
 
 ---
 
