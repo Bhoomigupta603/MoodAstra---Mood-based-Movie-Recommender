@@ -1,55 +1,104 @@
-# Bollywood Mood Recommender
+# MoodAstra : Bollywood Mood Recommender
 
-## Overview
+# MoodAstra - Bollywood Mood-Based Movie Recommender
 
-Bollywood Mood Recommender is a voice-activated movie recommendation web application that analyzes user mood through speech input and suggests appropriate Bollywood movies. The system uses browser-native Web Speech API for voice recognition, processes the input through a custom mood detection engine, and returns curated movie recommendations based on the detected emotional state. The application features a modern, responsive interface with animated backgrounds and provides detailed movie information including trailers, ratings, and descriptions.
+Welcome to **MoodAstra**, an interactive web application that recommends Bollywood movies based on your current mood!  
+Tell the app how you feel via voice input, and it suggests the perfect movies to match your emotions.
 
-## User Preferences
+---
 
-Preferred communication style: Simple, everyday language.
+## Features
 
-## System Architecture
+- **Voice Mood Detection**: Speak your mood, and the app listens using speech recognition.
+- **Personalized Movie Recommendations**: Bollywood movies categorized by moods like happy, sad, romantic, angry, inspired, and more.
+- **Movie Details**: View movie posters, descriptions, genres, ratings, trailers, and direct watch links.
+- **Text-to-Speech**: The app announces moods and recommendation counts for better interactivity.
+- **Smooth UI & Modal Views**: Responsive design with Bootstrap for a seamless user experience.
 
-### Frontend Architecture
-The frontend uses a modern web stack with Bootstrap 5 for responsive design and vanilla JavaScript for interactivity. The main interface features a microphone button for voice input, animated loading states, and dynamic movie card displays. The application implements the Web Speech API for voice recognition and includes text-to-speech capabilities for enhanced accessibility. CSS animations and gradients create an engaging visual experience with a dark theme optimized for entertainment applications.
+---
 
-### Backend Architecture
-The backend is built with Flask following a modular architecture pattern. The main application (`app.py`) handles HTTP routing and request processing, while the mood detection logic is separated into a dedicated `voice_mood` package. This separation allows for easy testing and maintenance of the mood analysis algorithms. The application uses a simple file-based approach for movie data storage with JSON format, making it lightweight and easy to deploy.
+## Demo
 
-### Mood Detection System
-The mood detection system consists of two main components: text cleaning utilities and mood extraction algorithms. The system processes voice input through multiple stages - first cleaning and normalizing the text, then matching against predefined mood keyword dictionaries. The mood-to-genre mapping system translates detected emotions into appropriate movie genres, enabling targeted recommendations. The default fallback ensures users always receive suggestions even when mood detection is uncertain.
+[Download and watch the demo video]("C:\Users\LENOVO\Videos\Captures\final_moodastra_movie_recommender.mp4")
 
-### Movie Recommendation Engine
-The recommendation engine filters the movie database based on detected mood and corresponding genre preferences. Movies are stored with rich metadata including genres, ratings, descriptions, and trailer links. The system supports multiple genres per movie and implements fuzzy matching to improve recommendation accuracy. The filtering algorithm prioritizes genre alignment while maintaining variety in suggestions.
+---
 
-### Data Storage
-The application uses a JSON-based file storage system for movie data, located in `data/movies_db.json`. Each movie entry contains comprehensive metadata including title, genres, year, rating, poster URL, description, and trailer link. This approach provides fast read access for recommendations while maintaining simplicity for development and deployment environments.
+## Screenshots
 
-### Template System
-The application uses Jinja2 templating with Bootstrap components for consistent UI rendering. Two main templates handle the application flow: `index.html` for the main interface and `movie_detail.html` for individual movie information. The template system supports dynamic content rendering with proper escaping and includes responsive design elements.
+*Add some screenshots here to showcase UI, movie recommendations, and details modal.*
 
-## External Dependencies
+<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/9171aed6-8c14-4157-ab8f-8b09aa819f86" />
 
-### Frontend Libraries
-- **Bootstrap 5.3.2**: Provides responsive grid system, components, and utility classes for modern web design
-- **Bootstrap Icons 1.10.5**: Icon library for consistent visual elements throughout the interface
-- **Google Fonts**: Typography enhancement for improved readability and visual appeal
+<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/3b17bbb9-7c12-43ad-ae39-413e189ebadd" />
 
-### Backend Framework
-- **Flask**: Lightweight WSGI web application framework providing routing, templating, and request handling
-- **Jinja2**: Template engine (included with Flask) for dynamic HTML generation
+<img width="1908" height="961" alt="image" src="https://github.com/user-attachments/assets/9a75ed77-9332-48d3-aa29-9388af91607d" />
 
-### Browser APIs
-- **Web Speech API**: Browser-native speech recognition for voice input processing
-- **Speech Synthesis API**: Text-to-speech functionality for audio feedback and accessibility
+---
 
-### Development Tools
-- **Python 3.x**: Core runtime environment for backend processing
-- **JSON**: Data serialization format for movie database and API responses
+## Technologies Used
 
-### Media Resources
-- **YouTube**: External video hosting for movie trailers embedded via iframe
-- **IMDB/External APIs**: Movie poster images and metadata (referenced via URLs)
+- Frontend: HTML, CSS (Bootstrap), JavaScript
+- Backend: Python Flask
+- Speech Recognition: Web Speech API (Browser)
+- Text-to-Speech: Web Speech API
+- Movie Data: Custom JSON dataset
+- Hosting: (Add if deployed somewhere, e.g., Replit, Heroku, etc.)
 
-### Optional Dependencies
-- **pyttsx3**: Python text-to-speech library mentioned in project documentation for server-side audio processing (not currently implemented in the active codebase)
+---
+
+## Installation and Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bhoomigupta603/MoodAstra---Mood-based-Movie-Recommender.git
+   cd MoodAstra---Mood-based-Movie-Recommender
+
+2. (Optional) Create and activate a Python virtual environment:
+
+- python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+
+3. Install dependencies:
+
+pip install -r requirements.txt
+
+4. Run the Flask app:
+python app.py
+
+5. Open your browser and navigate to:
+http://127.0.0.1:5000
+
+### Usage
+- Click the microphone icon and speak your current mood (e.g., happy, sad, romantic).
+
+- Browse through the recommended Bollywood movies tailored for that mood.
+
+- Click View Details on any movie to see description, trailer, and watch links.
+
+- Enjoy your personalized Bollywood movie recommendations!
+
+### Folder Structure
+
+MoodAstra/
+│
+├── app.py                  # Flask backend app
+├── requirements.txt        # Python dependencies
+├── static/                 # CSS, JS, images, and other static files
+│   ├── css/
+│   ├── js/
+│   ├── images/
+├── templates/              # HTML templates (including index.html)
+├── data/                   # JSON movie dataset files
+├── README.md               # Project documentation (this file)
+└── pyproject.toml          # Python project config (optional)
+
+### Contributing
+Contributions, suggestions, and improvements are welcome! Please open issues or submit pull requests.
+
+### Contact
+Created by *Bhoomi Gupta*
+GitHub: https://github.com/Bhoomigupta603
+Email: guptabhoomi577@gmail.com
+
+Enjoy your Bollywood movie journey with MoodAstra! 
