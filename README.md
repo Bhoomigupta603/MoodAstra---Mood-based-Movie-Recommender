@@ -77,7 +77,7 @@ http://127.0.0.1:5000
 - Enjoy your personalized Bollywood movie recommendations!
 
 ### Folder Structure
-
+```
 MoodAstra/
 │
 ├── app.py                  # Flask backend app
@@ -90,6 +90,7 @@ MoodAstra/
 ├── data/                   # JSON movie dataset files
 ├── README.md               # Project documentation (this file)
 └── pyproject.toml          # Python project config (optional)
+```
 
 ### Contributing
 Contributions, suggestions, and improvements are welcome! Please open issues or submit pull requests.
