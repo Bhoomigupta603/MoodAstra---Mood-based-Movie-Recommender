@@ -1,5 +1,3 @@
-# MoodAstra : Bollywood Mood Recommender
-
 # MoodAstra - Bollywood Mood-Based Movie Recommender
 
 Welcome to **MoodAstra**, an interactive web application that recommends Bollywood movies based on your current mood!  
