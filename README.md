@@ -17,7 +17,7 @@ Tell the app how you feel via voice input, and it suggests the perfect movies to
 
 ## Demo
 
-[Download and watch the demo video]("<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361141365931495424?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>")
+(src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361141365931495424?compact=1")
 
 ---
 
